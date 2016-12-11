@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title style="text-align: center;">LOGIN</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-card class="centered-card">
+    <ion-card-content>
+      <ion-item>
+        <ion-label fixed>Sala</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="form.url"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>WS</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="form.ws"></ion-input>
+      </ion-item>
+
+      <button ion-button outline (click)="goToCall()" style="margin-top: 15px;">Entrar</button>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
